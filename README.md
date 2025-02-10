@@ -1,4 +1,6 @@
-Project Proposal:
+**Project Proposal:**
+
+
 
 **Description:** We can look at historical stock prices and options prices in order to predict the trajectory of future stock price movements. Using this information, we can make informed predictions about the payoffs of different financial securities as they are dependent on multiple macroeconomic variables such as stock market performance but also interest rates and inflation.
 
