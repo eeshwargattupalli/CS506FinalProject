@@ -13,3 +13,7 @@ Data Modeling For the stock price projections, we will use a stochastic forward 
 Data Visualization: We can plot Monte-carlo simulations in matplotlib, plot expected versus actual behavior, confidence bands for regression techniques, histograms to compare predictions across different parameter sets, etc.
 
 Test Plan: We can collect any 52-week set of data (for stocks and options) and then compare our predictions to any point in time that is ahead of the time that the last point of data that was collected to test our predictions. The same principle applies for collecting census data but since this data is collected and released less often we will most likely have to collect data over several years as opposed to a single year.
+
+To view simulations, run "python3 main.py" in terminal
+
+Midterm report video: https://youtu.be/g9nxOWQNnqA
