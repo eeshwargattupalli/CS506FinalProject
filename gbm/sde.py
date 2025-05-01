@@ -1,5 +1,7 @@
 import numpy as np
 import random as r
+import sys
+
 
 class sde:
     # throughout the class, x represents the current state of the system given by an n-dimensional vector
@@ -34,14 +36,15 @@ class sde:
         return (Rt / 100)
 
     def ip(self):
-        wip = 0 #weighted implied volatility
+        wip = 0
+        wtotal = 0
         o = self.options
-        wtotal = 0 #total weights
-        
+
         for w, ip in o:
-            
-            wip += w * ip 
-            wtotal += w 
+            wip += w * ip
+            wtotal += w
+
+        return (wip / wtotal) if wtotal != 0 else 0
 
         return wip / wtotal 
     def initSigma(self):
